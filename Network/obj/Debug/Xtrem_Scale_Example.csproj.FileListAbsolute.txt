@@ -1,0 +1,80 @@
+C:\Users\DAG\source\repos\Xtrem_Scale_Example\obj\Debug\Xtrem_Scale_Example.csprojAssemblyReference.cache
+C:\Users\DAG\source\repos\Xtrem_Scale_Example\obj\Debug\MainWindow.g.cs
+C:\Users\DAG\source\repos\Xtrem_Scale_Example\obj\Debug\App.g.cs
+C:\Users\DAG\source\repos\Xtrem_Scale_Example\obj\Debug\Xtrem_Scale_Example_MarkupCompile.cache
+C:\Users\DAG\source\repos\Xtrem_Scale_Example\obj\Debug\Xtrem_Scale_Example_MarkupCompile.lref
+C:\Users\DAG\source\repos\Xtrem_Scale_Example\bin\Debug\Xtrem_Scale_Example.exe.config
+C:\Users\DAG\source\repos\Xtrem_Scale_Example\bin\Debug\Xtrem_Scale_Example.exe
+C:\Users\DAG\source\repos\Xtrem_Scale_Example\bin\Debug\Xtrem_Scale_Example.pdb
+C:\Users\DAG\source\repos\Xtrem_Scale_Example\obj\Debug\MainWindow.baml
+C:\Users\DAG\source\repos\Xtrem_Scale_Example\obj\Debug\Xtrem_Scale_Example.g.resources
+C:\Users\DAG\source\repos\Xtrem_Scale_Example\obj\Debug\Xtrem_Scale_Example.Properties.Resources.resources
+C:\Users\DAG\source\repos\Xtrem_Scale_Example\obj\Debug\Xtrem_Scale_Example.csproj.GenerateResource.cache
+C:\Users\DAG\source\repos\Xtrem_Scale_Example\obj\Debug\Xtrem_Scale_Example.csproj.CoreCompileInputs.cache
+C:\Users\DAG\source\repos\Xtrem_Scale_Example\obj\Debug\Xtrem_Scale_Example.exe
+C:\Users\DAG\source\repos\Xtrem_Scale_Example\obj\Debug\Xtrem_Scale_Example.pdb
+C:\Users\DAG\source\repos\Xtrem_Scale_Example\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\DAG\OneDrive - Gram Precision SL\PC-XTREM\Xtrem_Scale_Code_Example\bin\Debug\Xtrem_Scale_Example.exe.config
+C:\Users\DAG\OneDrive - Gram Precision SL\PC-XTREM\Xtrem_Scale_Code_Example\bin\Debug\Xtrem_Scale_Example.exe
+C:\Users\DAG\OneDrive - Gram Precision SL\PC-XTREM\Xtrem_Scale_Code_Example\bin\Debug\Xtrem_Scale_Example.pdb
+C:\Users\DAG\OneDrive - Gram Precision SL\PC-XTREM\Xtrem_Scale_Code_Example\obj\Debug\Xtrem_Scale_Example.csprojAssemblyReference.cache
+C:\Users\DAG\OneDrive - Gram Precision SL\PC-XTREM\Xtrem_Scale_Code_Example\obj\Debug\MainWindow.g.cs
+C:\Users\DAG\OneDrive - Gram Precision SL\PC-XTREM\Xtrem_Scale_Code_Example\obj\Debug\App.g.cs
+C:\Users\DAG\OneDrive - Gram Precision SL\PC-XTREM\Xtrem_Scale_Code_Example\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\DAG\OneDrive - Gram Precision SL\PC-XTREM\Xtrem_Scale_Code_Example\obj\Debug\Xtrem_Scale_Example_MarkupCompile.cache
+C:\Users\DAG\OneDrive - Gram Precision SL\PC-XTREM\Xtrem_Scale_Code_Example\obj\Debug\Xtrem_Scale_Example_MarkupCompile.lref
+C:\Users\DAG\OneDrive - Gram Precision SL\PC-XTREM\Xtrem_Scale_Code_Example\obj\Debug\MainWindow.baml
+C:\Users\DAG\OneDrive - Gram Precision SL\PC-XTREM\Xtrem_Scale_Code_Example\obj\Debug\Xtrem_Scale_Example.g.resources
+C:\Users\DAG\OneDrive - Gram Precision SL\PC-XTREM\Xtrem_Scale_Code_Example\obj\Debug\Xtrem_Scale_Example.Properties.Resources.resources
+C:\Users\DAG\OneDrive - Gram Precision SL\PC-XTREM\Xtrem_Scale_Code_Example\obj\Debug\Xtrem_Scale_Example.csproj.GenerateResource.cache
+C:\Users\DAG\OneDrive - Gram Precision SL\PC-XTREM\Xtrem_Scale_Code_Example\obj\Debug\Xtrem_Scale_Example.csproj.CoreCompileInputs.cache
+C:\Users\DAG\OneDrive - Gram Precision SL\PC-XTREM\Xtrem_Scale_Code_Example\obj\Debug\Xtrem_Scale_Example.exe
+C:\Users\DAG\OneDrive - Gram Precision SL\PC-XTREM\Xtrem_Scale_Code_Example\obj\Debug\Xtrem_Scale_Example.pdb
+C:\Users\DAG\OneDrive - Gram Precision SL\PC-XTREM\Xtrem_Scale_Code_Example\Serial com\bin\Debug\Xtrem_Scale_Example.exe.config
+C:\Users\DAG\OneDrive - Gram Precision SL\PC-XTREM\Xtrem_Scale_Code_Example\Serial com\bin\Debug\Xtrem_Scale_Example.exe
+C:\Users\DAG\OneDrive - Gram Precision SL\PC-XTREM\Xtrem_Scale_Code_Example\Serial com\bin\Debug\Xtrem_Scale_Example.pdb
+C:\Users\DAG\OneDrive - Gram Precision SL\PC-XTREM\Xtrem_Scale_Code_Example\Serial com\obj\Debug\Xtrem_Scale_Example.csprojAssemblyReference.cache
+C:\Users\DAG\OneDrive - Gram Precision SL\PC-XTREM\Xtrem_Scale_Code_Example\Serial com\obj\Debug\MainWindow.g.cs
+C:\Users\DAG\OneDrive - Gram Precision SL\PC-XTREM\Xtrem_Scale_Code_Example\Serial com\obj\Debug\App.g.cs
+C:\Users\DAG\OneDrive - Gram Precision SL\PC-XTREM\Xtrem_Scale_Code_Example\Serial com\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\DAG\OneDrive - Gram Precision SL\PC-XTREM\Xtrem_Scale_Code_Example\Serial com\obj\Debug\Xtrem_Scale_Example_MarkupCompile.cache
+C:\Users\DAG\OneDrive - Gram Precision SL\PC-XTREM\Xtrem_Scale_Code_Example\Serial com\obj\Debug\Xtrem_Scale_Example_MarkupCompile.lref
+C:\Users\DAG\OneDrive - Gram Precision SL\PC-XTREM\Xtrem_Scale_Code_Example\Serial com\obj\Debug\MainWindow.baml
+C:\Users\DAG\OneDrive - Gram Precision SL\PC-XTREM\Xtrem_Scale_Code_Example\Serial com\obj\Debug\Xtrem_Scale_Example.g.resources
+C:\Users\DAG\OneDrive - Gram Precision SL\PC-XTREM\Xtrem_Scale_Code_Example\Serial com\obj\Debug\Xtrem_Scale_Example.Properties.Resources.resources
+C:\Users\DAG\OneDrive - Gram Precision SL\PC-XTREM\Xtrem_Scale_Code_Example\Serial com\obj\Debug\Xtrem_Scale_Example.csproj.GenerateResource.cache
+C:\Users\DAG\OneDrive - Gram Precision SL\PC-XTREM\Xtrem_Scale_Code_Example\Serial com\obj\Debug\Xtrem_Scale_Example.csproj.CoreCompileInputs.cache
+C:\Users\DAG\OneDrive - Gram Precision SL\PC-XTREM\Xtrem_Scale_Code_Example\Serial com\obj\Debug\Xtrem_Scale_Example.exe
+C:\Users\DAG\OneDrive - Gram Precision SL\PC-XTREM\Xtrem_Scale_Code_Example\Serial com\obj\Debug\Xtrem_Scale_Example.pdb
+C:\Users\DAG\OneDrive - Gram Precision SL\PC-XTREM\Xtrem_Scale_Code_Example\Network com\bin\Debug\Xtrem_Scale_Example.exe.config
+C:\Users\DAG\OneDrive - Gram Precision SL\PC-XTREM\Xtrem_Scale_Code_Example\Network com\bin\Debug\Xtrem_Scale_Example.exe
+C:\Users\DAG\OneDrive - Gram Precision SL\PC-XTREM\Xtrem_Scale_Code_Example\Network com\bin\Debug\Xtrem_Scale_Example.pdb
+C:\Users\DAG\OneDrive - Gram Precision SL\PC-XTREM\Xtrem_Scale_Code_Example\Network com\obj\Debug\Xtrem_Scale_Example.csprojAssemblyReference.cache
+C:\Users\DAG\OneDrive - Gram Precision SL\PC-XTREM\Xtrem_Scale_Code_Example\Network com\obj\Debug\MainWindow.g.cs
+C:\Users\DAG\OneDrive - Gram Precision SL\PC-XTREM\Xtrem_Scale_Code_Example\Network com\obj\Debug\App.g.cs
+C:\Users\DAG\OneDrive - Gram Precision SL\PC-XTREM\Xtrem_Scale_Code_Example\Network com\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\DAG\OneDrive - Gram Precision SL\PC-XTREM\Xtrem_Scale_Code_Example\Network com\obj\Debug\Xtrem_Scale_Example_MarkupCompile.cache
+C:\Users\DAG\OneDrive - Gram Precision SL\PC-XTREM\Xtrem_Scale_Code_Example\Network com\obj\Debug\Xtrem_Scale_Example_MarkupCompile.lref
+C:\Users\DAG\OneDrive - Gram Precision SL\PC-XTREM\Xtrem_Scale_Code_Example\Network com\obj\Debug\MainWindow.baml
+C:\Users\DAG\OneDrive - Gram Precision SL\PC-XTREM\Xtrem_Scale_Code_Example\Network com\obj\Debug\Xtrem_Scale_Example.g.resources
+C:\Users\DAG\OneDrive - Gram Precision SL\PC-XTREM\Xtrem_Scale_Code_Example\Network com\obj\Debug\Xtrem_Scale_Example.Properties.Resources.resources
+C:\Users\DAG\OneDrive - Gram Precision SL\PC-XTREM\Xtrem_Scale_Code_Example\Network com\obj\Debug\Xtrem_Scale_Example.csproj.GenerateResource.cache
+C:\Users\DAG\OneDrive - Gram Precision SL\PC-XTREM\Xtrem_Scale_Code_Example\Network com\obj\Debug\Xtrem_Scale_Example.csproj.CoreCompileInputs.cache
+C:\Users\DAG\OneDrive - Gram Precision SL\PC-XTREM\Xtrem_Scale_Code_Example\Network com\obj\Debug\Xtrem_Scale_Example.exe
+C:\Users\DAG\OneDrive - Gram Precision SL\PC-XTREM\Xtrem_Scale_Code_Example\Network com\obj\Debug\Xtrem_Scale_Example.pdb
+C:\Users\DAG\OneDrive - Gram Precision SL\PC-XTREM\Xtrem_Scale_Code_Example\Network\bin\Debug\Xtrem_Scale_Example.exe.config
+C:\Users\DAG\OneDrive - Gram Precision SL\PC-XTREM\Xtrem_Scale_Code_Example\Network\bin\Debug\Xtrem_Scale_Example.exe
+C:\Users\DAG\OneDrive - Gram Precision SL\PC-XTREM\Xtrem_Scale_Code_Example\Network\bin\Debug\Xtrem_Scale_Example.pdb
+C:\Users\DAG\OneDrive - Gram Precision SL\PC-XTREM\Xtrem_Scale_Code_Example\Network\obj\Debug\Xtrem_Scale_Example.csprojAssemblyReference.cache
+C:\Users\DAG\OneDrive - Gram Precision SL\PC-XTREM\Xtrem_Scale_Code_Example\Network\obj\Debug\MainWindow.g.cs
+C:\Users\DAG\OneDrive - Gram Precision SL\PC-XTREM\Xtrem_Scale_Code_Example\Network\obj\Debug\App.g.cs
+C:\Users\DAG\OneDrive - Gram Precision SL\PC-XTREM\Xtrem_Scale_Code_Example\Network\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\DAG\OneDrive - Gram Precision SL\PC-XTREM\Xtrem_Scale_Code_Example\Network\obj\Debug\Xtrem_Scale_Example_MarkupCompile.cache
+C:\Users\DAG\OneDrive - Gram Precision SL\PC-XTREM\Xtrem_Scale_Code_Example\Network\obj\Debug\Xtrem_Scale_Example_MarkupCompile.lref
+C:\Users\DAG\OneDrive - Gram Precision SL\PC-XTREM\Xtrem_Scale_Code_Example\Network\obj\Debug\MainWindow.baml
+C:\Users\DAG\OneDrive - Gram Precision SL\PC-XTREM\Xtrem_Scale_Code_Example\Network\obj\Debug\Xtrem_Scale_Example.g.resources
+C:\Users\DAG\OneDrive - Gram Precision SL\PC-XTREM\Xtrem_Scale_Code_Example\Network\obj\Debug\Xtrem_Scale_Example.Properties.Resources.resources
+C:\Users\DAG\OneDrive - Gram Precision SL\PC-XTREM\Xtrem_Scale_Code_Example\Network\obj\Debug\Xtrem_Scale_Example.csproj.GenerateResource.cache
+C:\Users\DAG\OneDrive - Gram Precision SL\PC-XTREM\Xtrem_Scale_Code_Example\Network\obj\Debug\Xtrem_Scale_Example.csproj.CoreCompileInputs.cache
+C:\Users\DAG\OneDrive - Gram Precision SL\PC-XTREM\Xtrem_Scale_Code_Example\Network\obj\Debug\Xtrem_Scale_Example.exe
+C:\Users\DAG\OneDrive - Gram Precision SL\PC-XTREM\Xtrem_Scale_Code_Example\Network\obj\Debug\Xtrem_Scale_Example.pdb

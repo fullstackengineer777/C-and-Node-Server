@@ -1,0 +1,14 @@
+{
+  "name": "portjs",
+  "version": "0.1.0",
+  "description": "port C# to js",
+  "main": "server.js",
+  "author": "freelancer",
+  "license": "ISC",
+  "scripts": {
+    "start": "nw ."
+  },
+  "dependencies": {
+    "prompt-sync": "^4.2.0"
+  }
+}

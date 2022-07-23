@@ -1,0 +1,128 @@
+﻿<Window x:Class="Xtrem_Scale_Example_Network.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Xtrem_Scale_Example_Network"
+        mc:Ignorable="d"
+        Title="GRAM Xtrem scale example" Height="450" Width="800">
+
+    <Window.Resources>
+        <ResourceDictionary>
+            <local:BoolToVisibility x:Key="BoolToVisibility" />
+        </ResourceDictionary>
+    </Window.Resources>
+
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+
+        </Grid.ColumnDefinitions>
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+
+        <Label Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2"  FontSize="24" VerticalAlignment="Center" HorizontalAlignment="Center">
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="200"/>
+                    <ColumnDefinition Width="200"/>
+                    <ColumnDefinition Width="200"/>
+                </Grid.ColumnDefinitions>
+
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+
+                <Label Content="Brut" Grid.Row="0" Grid.Column="0"/>
+                <Label 
+                    Grid.Row="1" Grid.Column="0"
+                    Content="{Binding Scale.W_Brut, UpdateSourceTrigger=PropertyChanged}"
+                    />
+
+                <Label Content="Tare" Grid.Row="0" Grid.Column="1"/>
+                <Label 
+                    Grid.Row="1" Grid.Column="1"
+                    Content="{Binding Scale.W_Tare, UpdateSourceTrigger=PropertyChanged}"
+                    />
+
+                <Label Content="Net" Grid.Row="0" Grid.Column="2"/>
+                <Label 
+                    Grid.Row="1" Grid.Column="2"
+                    Content="{Binding Scale.W_Net, UpdateSourceTrigger=PropertyChanged}"
+                    />
+
+            </Grid>
+        </Label>
+
+
+        <Label x:Name="Weight"  
+               BorderThickness="1" BorderBrush="Gray"
+               Grid.Row="1" Grid.RowSpan="2"
+               Grid.ColumnSpan="2"
+               VerticalAlignment="Center" 
+               HorizontalContentAlignment="Right"
+               FontSize="64"   
+               Height="Auto" Width="600"
+                           
+               Content="{Binding Scale.W_Display, UpdateSourceTrigger=PropertyChanged}" 
+               />
+
+        
+        <Button 
+            Grid.Row="3" Grid.Column="0" 
+            Content="Zero" 
+            Click="Zero_Button_Click"
+            Width="300"
+            HorizontalAlignment="Right" 
+            FontSize="24"
+            
+            />
+
+        <Button 
+            Grid.Row="3" Grid.Column="1" 
+            Content="Tare" 
+            Click="Tare_Button_Click"
+            Width="300"
+            HorizontalAlignment="Left" 
+            FontSize="24"
+            
+            />
+
+        <Label
+            Grid.Row="4" Grid.Column="0" Grid.ColumnSpan="2" 
+            Width="Auto"
+            HorizontalAlignment="Center" 
+            HorizontalContentAlignment="Center"
+            VerticalAlignment="Center"
+            
+            FontSize="16"
+            
+            Content="Error: not connected or COM port not available" 
+            Visibility="{Binding Scale.IsNotConnected, Converter={StaticResource BoolToVisibility}, UpdateSourceTrigger=PropertyChanged}"
+            />
+
+        <Label
+            Grid.Row="4" Grid.Column="0" Grid.ColumnSpan="2" 
+            Width="Auto"
+            HorizontalAlignment="Center" 
+            HorizontalContentAlignment="Center"
+            VerticalAlignment="Center"
+            
+            FontSize="16"
+            
+            Content="{Binding Scale.DefinitionString, UpdateSourceTrigger=PropertyChanged}" 
+            />
+
+
+
+    </Grid>
+</Window>

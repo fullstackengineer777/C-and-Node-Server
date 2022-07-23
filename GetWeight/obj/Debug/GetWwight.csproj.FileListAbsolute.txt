@@ -1,0 +1,7 @@
+C:\Users\DAG\Desktop\LABGroup-Console\GetWwight\bin\Debug\GetWwight.exe.config
+C:\Users\DAG\Desktop\LABGroup-Console\GetWwight\bin\Debug\GetWwight.exe
+C:\Users\DAG\Desktop\LABGroup-Console\GetWwight\bin\Debug\GetWwight.pdb
+C:\Users\DAG\Desktop\LABGroup-Console\GetWwight\obj\Debug\GetWwight.csprojAssemblyReference.cache
+C:\Users\DAG\Desktop\LABGroup-Console\GetWwight\obj\Debug\GetWwight.csproj.CoreCompileInputs.cache
+C:\Users\DAG\Desktop\LABGroup-Console\GetWwight\obj\Debug\GetWwight.exe
+C:\Users\DAG\Desktop\LABGroup-Console\GetWwight\obj\Debug\GetWwight.pdb

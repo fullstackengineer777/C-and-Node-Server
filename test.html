@@ -1,0 +1,275 @@
+<html>
+    <script>
+
+    /*---------------  parse the received the udp datagram ----------------*/
+    function ParseWeightStream(data_received) {
+         
+        console.log("Packet received! \n ????????????????????");
+        console.log("decoding packet");
+
+        let CurrentFlag;
+        let  Flag_Change = false;
+        let Disp_weight;
+
+        //device destination
+        let dest_id = data_received.substr(2,2);
+        if (dest_id !== "00" && dest_id !== "FF")
+        {
+            //Console.WriteLine("dest_id=" + dest_id);
+            return;
+        }
+        
+        //Parameter code (Address)
+        let address = data_received.substr(5, 4);
+
+        let hexstr = data_received.substr(9, 2);
+        let l = parseInt(hexstr, 16);
+        if (data_received.length != l + 13)
+        {
+            //Console.WriteLine("data length = " + data_received.Length + " / l +13 = " + (l + 13));
+            return;
+        }
+        console.log("address" , address);
+        switch (address){
+            case "0107":  
+                //ConnectStatue = true;
+                let Weight_status = parseInt(data_received.substr(34, 3), 16);
+                CurrentFlag = Boolean( Weight_status & 1 );
+                if (CurrentFlag != this.w_Flag_Zero)
+                {
+                    Flag_Change = Flag_Change | true; 
+                }
+                else
+                {
+                    // OnPropertyChanged("W_Flag_Zero");
+                }
+                CurrentFlag == true ? this.w_Flag_Zero = true : this.w_Flag_Zero = false;
+                
+                CurrentFlag = Boolean( Weight_status & 2 );
+                if (CurrentFlag != this.w_Flag_Tare)
+                {
+                    Flag_Change = Flag_Change | true; 
+                }
+                else
+                {
+                // OnPropertyChanged("W_Flag_Zero");
+                }
+                CurrentFlag == true ? this.w_Flag_Tare = true : this.w_Flag_Tare = false;
+                
+                CurrentFlag = Boolean( Weight_status & 8 );
+                if (CurrentFlag != this.w_Flag_NetoDisp)
+                {
+                    Flag_Change = Flag_Change | true; 
+                }
+                else
+                {
+                // OnPropertyChanged("W_Flag_Zero");
+                }
+                CurrentFlag == true ? this.w_Flag_NetoDisp = true : this.w_Flag_NetoDisp = false;
+                
+                CurrentFlag = Boolean( Weight_status & 4 );
+                if (CurrentFlag != this.w_Flag_Stability)
+                {
+                    Flag_Change = Flag_Change | true;   
+                /*   if (CurrentFlag == true)
+                    {
+                        if (StabilityTimer != null)
+                            StabilityTimer.Start();
+                    }
+                    else
+                    {
+                        if (StabilityTimer != null)
+                            StabilityTimer.Stop();
+                    } */
+                }
+                else
+                {
+                // OnPropertyChanged("W_Flag_Stability");
+                }
+                CurrentFlag == true ? this.w_Flag_Stability = true : this.w_Flag_Stability = false;
+
+                CurrentFlag = Boolean(Weight_status & 0x20);
+                if (CurrentFlag != this.w_Flag_HighRes)
+                {
+                    if (this.w_Flag_HighRes == true)
+                    {
+                        this.W_Hold = 0;
+                    }
+                    Flag_Change = Flag_Change | true;
+                }
+                else
+                {
+                    //OnPropertyChanged("W_Flag_HighRes");
+                }
+                CurrentFlag == true ? this.w_Flag_HighRes = true : this.w_Flag_HighRes = false;
+
+                let  w = data_received.substr(12, 8);
+                let decimalPlaces = 0;
+                if (w.indexOf('.') > 0)
+                {
+                    decimalPlaces = w.length - w.indexOf('.') - 1;
+                }
+                else
+                {
+                    decimalPlaces = 0;
+                }
+                this.ResFactor = (Weight_status & 0x20) == 0x20 ? 10 : 1;
+
+                //hold mode
+                let dec = decimalPlaces - parseInt(this.ResFactor) / 10;
+                let noload = 20 * this.curEsc / Math.pow(10, dec);
+                if (this.w_Flag_Stability && (this.w_Net < noload))
+                {
+                    this.holdWeightChange = true;
+                                            
+                }
+
+                if (w_Flag_Stability && this.w_Net > parseFloat(this.curEsc))
+                {
+
+                    if (this.holdWeightChange == true || this.w_Net > this.W_Hold)       // && Scale.W_Net > holdWeight)
+                    {
+                        this.holdWeightChange = false;
+                        this.W_Hold = this.W_Brut;
+                    }
+                }
+
+                this.W_Brut = parseFloat(data_received.substr(12, 8));
+                this.W_Tare = parseFloat(data_received.substr(23, 8));
+                this.w_Net = this.W_Brut - this.W_Tare;
+                this.w_Unit = data_received.substr(20, 2);
+                Disp_weight = this.w_Flag_NetoDisp ?  this.w_Net.toFixed(decimalPlaces).toString() + " " + this.w_Unit
+                        :  W_Brut.toFixed(decimalPlaces).toString() + " " + this.w_Unit;                 
+
+                CurrentFlag = Boolean(this.w_Display == Disp_weight);
+                if (CurrentFlag == false)
+                {
+                    Flag_Change = Flag_Change | true;
+                }
+
+                if (this.HoldMode == true)
+                {
+                    this.w_Display = this.W_Hold.toFixed(decimalPlaces).toString() + " " + this.w_Unit;
+                }
+                else
+                {
+                    this.w_Display = Disp_weight;
+                }
+                
+                //QR Code 
+                let _weight_value;
+                let w_value = parseFloat(this.w_Display.substr(0, this.w_Display.length - 2))
+                if (w_value)
+                {
+                    _weight_value = w_value.toString() + this.w_Unit;
+                }
+                else
+                {
+                    _weight_value = this.w_Display;
+                }
+                console.log("Weight on Scale is " + _weight_value);
+                break;
+            case "0111":  
+                Flag_Change = false;
+                        
+                if (this.w_Display != "ADC L" && this.w_Display != "ADC H")
+                {
+                    
+                    this.adcCts = parseInt(data_received.substr(11, l));
+                    let _VInput = parseFloat(this.adcCts) / parseFloat(maxCounts) * 10;
+                    this.vInput = _VInput.toFixed(3).toString() + " mV";                      
+                }                    
+                break;
+            case "0210":
+                Flag_Change = false;                                        
+                let VinCts = data_received.substr(11, l);
+                let _Vin = parseFloat(VinCts) / 71.8;
+                VinVolt = _Vin.toFixed(1).toString() + " Vcc";
+        
+                break;
+            case "0202":  
+                Flag_Change = false;
+                if (type == "XTREM-S")
+                {
+                    let _stmp = data_received.substr(11, l);
+                    let _tmp = parseFloat(_stmp);
+                    this.xTemp = _tmp.toFix(1).toString() + " \u2103";
+              
+                }
+                else
+                {
+                    this.xTemp = "not available";
+                    this.GetXTemp = false;
+                }
+                break;
+            case "0100":
+                ConnectState = true;
+                //error flags
+                let error_status = parseInt(data_received.substr(11, 2), 16);
+                error_status = error_status & 0x1F;
+
+                if (error_status == 0)
+                {
+                    break;
+                }
+
+                if (error_status == 1)
+                {
+                    Disp_weight = "Error 01";       //Flash memory error
+                }
+                else if (error_status == 2)
+                {
+                    Disp_weight = "Error 02";       //ADC fail
+                }
+                else if (error_status == 3)
+                {
+                    Disp_weight = "Error 03";       //Load cell input signal out of range (>30mV)
+                }
+                else if (error_status == 4)
+                {
+                    Disp_weight = "ADC H";          //Load cell input signal too high
+                    this.vInput = "> 20 mV";
+                    this.adcCts = 8388608;
+
+                }
+                else if (error_status == 5)
+                {
+                    Disp_weight = "ADC L";          //Load cell input signal too low
+                    this.vInput = "< -20 mV";
+                    this.adcCts = -8388608;
+                }
+                else if (error_status == 7)
+                {
+                    //Disp_weight = "-OL-        ";           //Over load, weight > Max+9e
+                    Disp_weight = "Over Load   ";           //Over load, weight > Max+9e
+                }
+                else
+                {
+                    Disp_weight = error_status == 8 ? "_ _ _ _ _ _ _ _ _ " : "Error";
+                }
+                
+                CurrentFlag = Boolean(this.w_Display == Disp_weight);
+                if (CurrentFlag == false)
+                {
+                    Flag_Change = Flag_Change | true;
+                }
+
+                this.w_Display = Disp_weight;  
+                
+                break;
+            default:
+                break;
+        }
+        if (Flag_Change == true)
+        {
+            //OnWeightChanged();        
+        }
+
+
+    }
+       // ParseDataReceived("34000g12340f123456789012345e1234");
+        //ParseWeightStream("4000g01070f123456789012345e1234567890");
+          ParseWeightStream("**00*010718*34.00000kg*48.00000***123");
+        
+    </script>
+</html>

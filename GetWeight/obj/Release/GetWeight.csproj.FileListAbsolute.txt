@@ -1,0 +1,15 @@
+C:\Users\DAG\Desktop\LABGroup-Console\GetWwight\bin\Release\GetWeight.exe.config
+C:\Users\DAG\Desktop\LABGroup-Console\GetWwight\bin\Release\GetWeight.exe
+C:\Users\DAG\Desktop\LABGroup-Console\GetWwight\bin\Release\GetWeight.pdb
+C:\Users\DAG\Desktop\LABGroup-Console\GetWwight\obj\Release\GetWeight.csproj.CoreCompileInputs.cache
+C:\Users\DAG\Desktop\LABGroup-Console\GetWwight\obj\Release\GetWeight.exe
+C:\Users\DAG\Desktop\LABGroup-Console\GetWwight\obj\Release\GetWeight.pdb
+C:\Users\DAG\Desktop\LABGroup-Console\GetWwight\obj\Release\GetWeight.csprojAssemblyReference.cache
+E:\task\adventure\Adventure\Xtrem_Scale_Code_Example\GetWeight\bin\Release\GetWeight.exe.config
+E:\task\adventure\Adventure\Xtrem_Scale_Code_Example\GetWeight\bin\Release\GetWeight.exe
+E:\task\adventure\Adventure\Xtrem_Scale_Code_Example\GetWeight\bin\Release\GetWeight.pdb
+E:\task\adventure\Adventure\Xtrem_Scale_Code_Example\GetWeight\obj\Release\GetWeight.csproj.AssemblyReference.cache
+E:\task\adventure\Adventure\Xtrem_Scale_Code_Example\GetWeight\obj\Release\GetWeight.csproj.SuggestedBindingRedirects.cache
+E:\task\adventure\Adventure\Xtrem_Scale_Code_Example\GetWeight\obj\Release\GetWeight.csproj.CoreCompileInputs.cache
+E:\task\adventure\Adventure\Xtrem_Scale_Code_Example\GetWeight\obj\Release\GetWeight.exe
+E:\task\adventure\Adventure\Xtrem_Scale_Code_Example\GetWeight\obj\Release\GetWeight.pdb
